@@ -1,13 +1,11 @@
 {
 	"appId": "io.ionic.portals.ecommercewebapp",
 	"appName": "Portals Web App",
-	"webDir": "../shell/build",
-	"bundledWebRuntime": false,
+	"webDir": "./build",
 	"plugins": {
-		"Portals": {
+		"FederatedCapacitor": {
 			"shell": {
 				"name": "shell",
-				"webDir": "./build",
 				"liveUpdateConfig": {
 					"appId": "e9597b11",
 					"channel": "production",

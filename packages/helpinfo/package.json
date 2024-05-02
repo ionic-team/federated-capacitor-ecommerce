@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@capacitor/core": "^3.5.0",
-    "@ionic/react": "^6.2.0",
+    "@capacitor/core": "^5.0.0-beta.2",
+    "@ionic/react": "^6.0.11",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "ionicons": "^6.0.2",
-    "provider-lib": "*",
+    "provider-lib": "file:../provider-lib",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -29,6 +29,7 @@
   "scripts": {
     "start": "export PORT=3006; craco start",
     "build": "craco build",
+    "build:appflow": "cd ../provider-lib && npm run build && cd ../helpinfo && npm run build",
     "serve": "npm run build && serve -s build -p 3006",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
